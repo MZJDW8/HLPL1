@@ -18,7 +18,7 @@ int main()
     if(d<0)
     {
         cout<<"this quadratic equation has no real roots!\n";
-        exit(0);
+        return 0;
     }
 
     z=(-b-sqrt(d))/2/a;
