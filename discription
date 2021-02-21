@@ -7,3 +7,8 @@ the quadratic equation ,they can be a irrational value.
 so we will be unable to print it out if we state them as an integer.
 then our program will get three inputs from the user which are the values of A,B,C.
 And then we find the discrimenent of the quadratic equation , with a formula d=b*b-4ac;
+as we know if the discriminent is less then zero then the equation has no real roots. or in other words have no solution!
+so we check it using if loop, is it is not less then zero then it will go further!
+As we knw that the quadratic equation has 2 values, which is differ by the postive and a negative sign!
+After that we will print te roots of the program!
+And end our program with a return statement!
