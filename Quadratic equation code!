@@ -21,8 +21,8 @@ int main()
         return 0;
     }
 
-    z=(-b-sqrt(d))/2/a;
-    y=(-b+sqrt(d))/2/a;
+    z=(-b+sqrt(d))/(2*a);
+    y=(-b-sqrt(d))/(2*a);
 
     cout<<"the root of the equation x are following "<< z << " and "<< y;
 
