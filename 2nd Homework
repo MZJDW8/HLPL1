@@ -1,0 +1,47 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int fact(int value)
+{
+if(value==1)
+{
+return 1;
+}
+else
+return value*fact(value-1);
+}
+
+int main()
+{
+int w,x,y,perm,comb;
+
+try{
+
+cout<<"Enter value of x:";
+cin>> x;
+cout<<"Enter value of y:";
+cin>>y;
+if(x<y)
+   throw 99 ;
+perm = fact(x)/fact(x-y);
+comb = perm/fact(y);
+
+cout<<"for printing permutation press 1, for combination press 2, and for both press 3\n";
+cin>> w;
+
+if(w==1)
+cout<<"Permutation="<< perm;
+
+else if(w==2)
+cout<<"Combination="<< comb;
+
+else if(w==3)
+cout<<"permutation="<<perm<<" and Combination="<<comb;
+
+} catch(int x){
+               cout<<"X can not be smaller then Y Error number:"<<x<<endl;
+               }
+
+return 0;
+}
