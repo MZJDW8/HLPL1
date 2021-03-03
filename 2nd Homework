@@ -4,11 +4,15 @@ using namespace std;
 
 int fact(int value)
 {
-if(value==1)
+if(value==o)
 {
 return 1;
 }
-else
+else if(value==1)
+{
+return 1;
+}
+else if
 return value*fact(value-1);
 }
 
@@ -22,8 +26,10 @@ cout<<"Enter value of x:";
 cin>> x;
 cout<<"Enter value of y:";
 cin>>y;
+
 if(x<y)
-   throw 99 ;
+   throw 99 ;   
+   
 perm = fact(x)/fact(x-y);
 comb = perm/fact(y);
 
