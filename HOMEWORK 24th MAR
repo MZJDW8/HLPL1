@@ -1,0 +1,42 @@
+
+#include <iostream>
+#include <string>
+#include <vector>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+     vector<double>v;
+     int n;
+     try{
+         cout<< "Pleas enter name" << endl;
+         string name;
+         cin >> name;
+         fstream file {name};
+         if(!file)
+         {
+         cout<<("No such file exist");
+         return 0;
+         }
+         while(file>>n)
+         {
+             v.push_back(n);
+         }
+         }catch(exception& e){
+             cout<< e.what() << endl;
+             return 0; 
+         }
+         
+    int i, sum=0;
+    for(i=0;i<v.size();i++)
+        {
+        sum+=v[i];
+        }
+    cout<<"sum="<<sum<<endl;
+    return 0;
+}
+
+
+
+
