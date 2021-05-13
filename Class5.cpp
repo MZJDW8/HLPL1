@@ -35,8 +35,7 @@ int main()
         cout << vec[i].first << " : " << vec[i].second <<endl;
     }
     
-    sort( name.begin() , name.end() );
-    cout <<"Lexiographicaly -> "<< name[0] << " Is the first string!"<<endl;
-    cout <<"Lexiographicaly -> "<< name[4] << " Is the first string!"<<endl;
+    cout <<"Lexiographicaly -> "<< vec[0].first << " Is the first string!"<<endl;
+    cout <<"Lexiographicaly -> "<< vec[4].first << " Is the first string!"<<endl;
     return 0;
 }
