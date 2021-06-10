@@ -12,7 +12,7 @@ void f(int a[] , int n)
     //3.b
     for(i=0;i<10;i++)
     {
-        la[i] =ga[i];
+        la[i] =a[i];
     }
     //3.c
     for(i=0;i<10;i++)
