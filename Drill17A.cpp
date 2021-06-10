@@ -18,7 +18,7 @@ void print_array(ostream& os, int* a, int n)
     }
     cout << endl;
 }
-
+//10
 void print_vector(ostream& os, vector<int> v)
 {
     for(int i=0;i<v.size();i++)
